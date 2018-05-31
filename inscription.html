@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Inscription </title>
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
+
+        <!-- css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="icon" type="image/png" href="img/logomfc.png" />
+
+  </head>
+
+  <!-- Contenu du site -->
+  <body>
+
+    <!-- header -->
+    <header class="container-fluid header">
+      <div class="container">
+        <a href="/index.html" class="logo"> MFC </a>
+        <nav class="menu">
+          <a href="/index.html"> Accueil </a>
+          <a href="/index.html#about"> À propos </a>
+          <a href="/index.html#mfc"> Formations </a>
+          <a href="#"> Inscription </a>
+          <a href="#contact"> Contact </a>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <h1 align="center" style="margin-top : 80px;"> FORMULAIRE D'INSCRIPTION </h1>
+    <hr class="separator">
+
+
+  <!-- formulaire -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form class="needs-validation" novalidate>
+
+          <!-- section  entreprise -->
+          <div class="card">
+            <header class="card-header">
+  	          <h4 align="center" class="card-title mt-2">Entreprise</h4>
+            </header>
+            <article class="card-body">
+
+            <!-- Genre -->
+            <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-2 pt-0">Genre</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="genre" id="homme" value="homme" required>
+                      <label class="form-check-label" for="homme">
+                        M
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="genre" id="femme" value="femme" required>
+                      <label class="form-check-label" for="femme">
+                        Mme
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!--NOM PRENOM-->
+            	<div class="form-row">
+            		<div class="col form-group">
+            			<label>Nom </label>
+            		  	<input type="text" name="nom" id="nom" class="form-control" placeholder="" required>
+            		</div> <!-- form-group end.// -->
+            		<div class="col form-group">
+            			<label>Prénom</label>
+            		  	<input type="text" name="prenom" id="prenom"class="form-control" placeholder=" " required>
+            		</div> <!-- form-group end.// -->
+            	</div> <!-- form-row end.// -->
+
+              <!-- Mail-->
+            	<div class="form-group">
+            		<label>Adresse mail</label>
+            		<input type="email" name="mail" id="mail" class="form-control" placeholder="" required>
+            	</div> <!-- form-group end.// -->
+
+              <!--FAX ET TELEPHONE-->
+              <div class="form-row">
+                <div class="col form-group">
+                  <label>N° Téléphone </label>
+                    <input type="number" name="telephone" id="telephone" class="form-control" placeholder="" required>
+                </div> <!-- form-group end.// -->
+                <div class="col form-group">
+                  <label>Fax</label>
+                    <input type="number" name="fax" id="fax"class="form-control" placeholder=" ">
+                </div> <!-- form-group end.// -->
+              </div> <!-- form-row end.// -->
+
+              <!-- Societe-->
+              <div class="form-group">
+                <label>Société</label>
+                <input type="text" name="societe" id="societe" class="form-control" placeholder="" required>
+              </div> <!-- form-group end.// -->
+
+              <!-- Adresse-->
+              <div class="form-group">
+                <label>Adresse</label>
+                <input type="text" name="adresse" id="adresse" class="form-control" placeholder="" required>
+              </div> <!-- form-group end.// -->
+
+            	<div class="form-row">
+            		<div class="form-group col-md-6">
+            		  <label>Code Postal</label>
+            		  <input type="number" name="codepostal" id="codepostal" class="form-control" required>
+            		</div> <!-- form-group end.// -->
+                <div class="form-group col-md-6">
+            		  <label>Ville</label>
+            		  <input type="text" name="ville" id="ville" class="form-control" required>
+            		</div> <!-- form-group end.// -->
+            	</div> <!-- form-row.// -->
+
+            </article> <!-- card-body end .// -->
+          </div>
+
+          <hr class="separator2">
+
+          <!-- section Stage -->
+          <div class="card">
+            <header class="card-header">
+              <h4 align="center" class="card-title mt-2">Stage</h4>
+            </header>
+            <article class="card-body">
+
+              <!-- Nom STAGE-->
+              <div class="form-group">
+                <label>Intitulé du stage</label>
+                <input type="text" name="idstage" id="idstage" class="form-control" placeholder="" required>
+              </div> <!-- form-group end.// -->
+
+              <!--date et durée-->
+              <div class="form-row">
+                <div class="col form-group">
+                  <label>Date de début </label>
+                    <input type="date" name="datestage" id="datestage" class="form-control" placeholder="" required>
+                </div> <!-- form-group end.// -->
+                <div class="col form-group">
+                  <label>Durée du stage <small>(en jours)</small></label>
+                    <input type="number" name="dureestage" id="dureestage"class="form-control" placeholder=" " required>
+                </div> <!-- form-group end.// -->
+              </div> <!-- form-row end.// -->
+
+              <!-- nb personne et lieu stage -->
+              <div class="form-row">
+            		<div class="form-group col-md-6">
+            		  <label>Site</label>
+            		  <select name="site" id="site" class="form-control" placeholder="Sélectionnez un site" required>
+            		      <option value="lille">Lille</option>
+            		      <option value="lyon">Lyon</option>
+            		      <option value="bordeaux">Bordeaux</option>
+            		      <option value="nantes">Nantes</option>
+            		      <option value="nice">Nice</option>
+            		  </select>
+            		</div> <!-- form-group end.// -->
+                <div class="form-group col-md-6">
+                  <label>Nombre de participants</label>
+                  <select name="nbparticipants" id="nbparticipants" class="form-control" placeholder="Sélectionnez un site" required>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                  </select>
+                </div> <!-- form-group end.// -->
+              </div> <!-- form-row end.// -->
+
+              <!-- Bouton 'ENVOYER' -->
+              <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-block"> Envoyer </button>
+              </div> <!-- form-group// -->
+              <small class="text-muted">En cliquant sur le boutton 'Envoyer', vous acceptez nos <br> Conditions d'utilisation et Politique de confidentialité.</small>
+            </article> <!-- card-body end .// -->
+          </div>
+
+        </form>
+      </div> <!-- col.//-->
+    </div> <!-- row.//-->
+  </div>
+<!--container formulaire end.//-->
+
+    <!-- footer/contact -->
+    <footer class="container-fluid footer">
+        <hr class="separator"/>
+        <h2 id="contact"> Contactez-nous </h2>
+        <hr class="separator"/>
+        <p>
+          <b>Téléphone :</b> 0825 07 9090
+          <span class="marge"> <b>Fax :</b> 0825 07 6005 </span>
+          <span class="marge"> <b>Mail :</b> contact@mfc.fr </span>
+        </p>
+        <hr class="separator2"/>
+        <h3> Adresses </h3>
+        <p>
+          <b>Siège LILLE — 20 Rue des Bois 59630 LILLE Cedex 02</b></br> <b>BORDEAUX</b> — 33 Boulevard des Gens 33690 BORDEAUX Cedex <b>LYON</b> — 25 Avenue Marty 69253 LYON Cedex 03 <b>NANTES</b> — 45 Rue des Vagues 44303 NANTES Cedex </br> <b>NICE</b> — 4 Avenue des Mimosas 06888 NICE Cedex
+        </p>
+        <hr class="separator"/>
+    </footer>
+    <!-- end footer/contact -->
+
+    <!-- JAVA / JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+
+  </body>
+</html>

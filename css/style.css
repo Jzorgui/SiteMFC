@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+/*font-family: 'Raleway', sans-serif;*/
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.separator {
+  height: 3px;
+  width: 5%;
+  border: none;
+  box-shadow: none;
+  background-color: #3498DB;
+}
+
+.separator2 {
+  height: 3px;
+  width: 5%;
+  border: none;
+  box-shadow: none;
+  background-color: #ffffff;
+}
+
+.separator3 {
+  height: 1;
+  width: 5%;
+  border: none;
+  box-shadow: none;
+  background-color: #ffffff;
+}
+
+.marge {
+margin-left: 5em;
+}
+
+/* formulaire inscription */
+.marge2 {
+margin-left: 2em;
+}
+
+/* header */
+.header {
+  background-color: #3498DB;
+  height: 70px;
+  line-height: 70px;
+
+  /* menu fixe*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;   /*fixe navbar en premier plan*/
+  /*end menu fixe */
+
+}
+
+.logo {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  float: left;
+}
+
+.logo:hover {
+  color: #F1B01B;
+}
+
+.menu {
+  float: right;
+}
+
+.menu a {
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.menu a:hover {
+  color: #F1B01B;
+}
+
+/* bannière */
+.banner {
+  width: 100%;
+  max-width: 100%;
+}
+
+.ban {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.ban img {
+  margin-top: 70px
+  width: 100%;
+  max-width: 100%;
+}
+
+.inner-banner {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+.inner-banner h1 {
+  color: #ffffff;
+  text-shadow: 1px 1px 20px #000000;
+}
+
+.inner-banner .btn-custom {
+  background-color: #3498DB;
+  color: #ffffff;
+  border: none;
+}
+
+.inner-banner .btn-custom:hover {
+  background-color: #F1B01B;
+}
+
+/* à propos */
+#about {
+  margin-top: 3%;
+}
+
+.nav>li>a {
+    color: #000000;
+}
+
+/* Formation */
+#mfc {
+  text-align: center;
+  margin-top: 2%;
+}
+
+/* contact */
+.footer {
+  background-color: #3498DB;
+  text-align: center;
+  color: #ffffff;
+}
+
+#contact {
+  color: #ffffff;
+  text-align: center;
+}
+
+.genre {
+  margin-left:0;
+}
+
+/* RETIRER FLECHE SELECTEUR*/
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin:0;
+}
+
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button {
+	-o-appearance: none;
+	margin:0
+}
+
+/* FIN RETIRER FLECHE SELECTEUR*/
